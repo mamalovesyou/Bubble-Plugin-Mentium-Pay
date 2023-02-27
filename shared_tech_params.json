@@ -1,0 +1,16 @@
+{
+    "assets": {
+        "ABo": {
+            "name": "preview",
+            "url": "//meta.cdn.bubble.io/f1676822240905x246643220755184060/Frame%203.png"
+        },
+        "ACv": {
+            "name": "Mentium Pay",
+            "url": "//meta.cdn.bubble.io/f1677085220442x374305754050684000/mentium-pay.es.js"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": 3,
+        "use_jquery": true
+    }
+}

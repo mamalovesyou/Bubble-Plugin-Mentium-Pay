@@ -1,0 +1,219 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAh": {
+            "body": "{\n  \"amount\": <amount>,\n  \"orderId\": \"<order_id>\",\n  \"payer\": {\n    \"email\": \"<payer_email>\",\n    \"firstName\": \"<payer_firstname>\",\n    \"lastName\": \"<payer_lastname>\"\n  }\n}",
+            "body_params": {
+                "AAt": {
+                    "key": "amount",
+                    "private": true,
+                    "value": "25.00"
+                },
+                "ABB": {
+                    "key": "order_id",
+                    "private": true,
+                    "value": "ORDER-1234"
+                },
+                "ABC": {
+                    "key": "payer_email",
+                    "private": true,
+                    "value": "jdoe@mentum.io"
+                },
+                "ABF": {
+                    "key": "payer_lastname",
+                    "private": true,
+                    "value": "Doe"
+                },
+                "ABG": {
+                    "key": "payer_firstname",
+                    "private": true,
+                    "value": "John"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Checkout Session",
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.AAh",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAh\":{\"caption\":\"Create Checkout Session\",\"fields\":{\"_p_sessionLink\":{\"ret_value\":\"text\",\"caption\":\"sessionLink\",\"sample_value\":\"06400316-c53f-4191-ac48-40e3e7c4c282\",\"path\":[\"sessionLink\"]}}}}",
+            "url": "https://api.mentium.io/checkouts/new"
+        },
+        "ABP": {
+            "body": "{\n  \"email\": \"<email>\",\n  \"firstName\": \"<firstname>\",\n  \"lastName\": \"<lastname>\",\n  \"correlationId\": \"<correlationId>\",\n  \"sendInvitation\": <send_email_invitation>\n}",
+            "body_params": {
+                "ABT": {
+                    "key": "email",
+                    "private": true,
+                    "value": "matthieuberger84@gmail.com"
+                },
+                "ABU": {
+                    "key": "firstname",
+                    "private": true,
+                    "value": "Matthieu"
+                },
+                "ABV": {
+                    "key": "lastname",
+                    "private": true,
+                    "value": "Berger"
+                },
+                "ABW": {
+                    "key": "correlationId",
+                    "private": true,
+                    "value": "user-1234"
+                },
+                "ACX": {
+                    "key": "send_email_invitation",
+                    "private": true,
+                    "value": "true"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Marketplace Seller",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.ABP",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.ABP\":{\"caption\":\"Create Marketplace Seller\",\"fields\":{\"_p_invitationLink\":{\"ret_value\":\"text\",\"caption\":\"invitationLink\",\"sample_value\":\"https://dashboard.mentium.io/marketplaces/3b7a8187-7c8d-4283-9df4-9829027bdeeb/invitations/7a6f97fe-d610-4ef2-8e20-090173c0f53b?token=0d95e042-5adf-4f10-8cbd-a4a98dd8563d\",\"path\":[\"invitationLink\"]},\"_p_seller.id\":{\"ret_value\":\"text\",\"caption\":\"seller id\",\"sample_value\":\"9d6b18af-c512-42f6-bb8f-f7e2f346364e\",\"path\":[\"seller\",\"id\"]},\"_p_seller.correlationId\":{\"ret_value\":\"text\",\"caption\":\"seller correlationId\",\"sample_value\":\"user-1234\",\"path\":[\"seller\",\"correlationId\"]},\"_p_seller.email\":{\"ret_value\":\"text\",\"caption\":\"seller email\",\"sample_value\":\"matthieuberger84@gmail.com\",\"path\":[\"seller\",\"email\"]},\"_p_seller.firstName\":{\"ret_value\":\"text\",\"caption\":\"seller firstName\",\"sample_value\":\"Matthieu\",\"path\":[\"seller\",\"firstName\"]},\"_p_seller.lastName\":{\"ret_value\":\"text\",\"caption\":\"seller lastName\",\"sample_value\":\"Berger\",\"path\":[\"seller\",\"lastName\"]},\"_p_seller.phone\":{\"ret_value\":\"text\",\"caption\":\"seller phone\",\"sample_value\":\"\",\"path\":[\"seller\",\"phone\"]},\"_p_seller.status\":{\"ret_value\":\"text\",\"caption\":\"seller status\",\"sample_value\":\"PENDING\",\"path\":[\"seller\",\"status\"]},\"_p_seller.createdAt\":{\"ret_value\":\"date\",\"caption\":\"seller createdAt\",\"sample_value\":\"2023-02-27T08:39:15.601537684Z\",\"path\":[\"seller\",\"createdAt\"]},\"_p_seller.updatedAt\":{\"ret_value\":\"date\",\"caption\":\"seller updatedAt\",\"sample_value\":\"2023-02-27T08:39:15.601537824Z\",\"path\":[\"seller\",\"updatedAt\"]}}}}",
+            "url": "https://api.mentium.io/marketplaces/sellers"
+        },
+        "ABd": {
+            "body": "{\n  \"email\": \"<email>\",\n  \"firstName\": \"<firstname>\",\n  \"lastName\": \"<lastname>\",\n  \"correlationId\": \"<correlationId>\",\n  \"sendInvitation\": <send_invitation_email>\n}",
+            "body_params": {
+                "ABe": {
+                    "key": "email",
+                    "private": true,
+                    "value": "jdoe-seller@mentium.io"
+                },
+                "ABf": {
+                    "key": "firstname",
+                    "private": true,
+                    "value": "John"
+                },
+                "ABg": {
+                    "key": "lastname",
+                    "private": true,
+                    "value": "Doe"
+                },
+                "ABh": {
+                    "key": "correlationId",
+                    "private": true,
+                    "value": "user-1234"
+                },
+                "ACL": {
+                    "key": "send_invitation_email",
+                    "private": true,
+                    "value": "false"
+                }
+            },
+            "body_type": "json",
+            "initialized": true,
+            "method": "get",
+            "name": "List Marketplace Sellers",
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.ABd",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABd\":{\"caption\":\"DEV - List Marketplace Seller\",\"fields\":{\"_p_sellers\":{\"ret_value\":\"list.api.1677486973364x244644795467431940.plugin_api.ABd.sellers\",\"caption\":\"sellers\",\"path\":[\"sellers\"]}}},\"plugin_api.ABd.sellers\":{\"caption\":\"DEV - List Marketplace Sellers seller\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"d8e10cf3-64e8-4345-902f-a11a99798843\",\"path\":[\"id\"]},\"_p_correlationId\":{\"ret_value\":\"text\",\"caption\":\"correlationId\",\"sample_value\":\"user-1234\",\"path\":[\"correlationId\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"jdoe-seller@mentium.io\",\"path\":[\"email\"]},\"_p_firstName\":{\"ret_value\":\"text\",\"caption\":\"firstName\",\"sample_value\":\"John\",\"path\":[\"firstName\"]},\"_p_lastName\":{\"ret_value\":\"text\",\"caption\":\"lastName\",\"sample_value\":\"Doe\",\"path\":[\"lastName\"]},\"_p_phone\":{\"ret_value\":\"text\",\"caption\":\"phone\",\"sample_value\":\"\",\"path\":[\"phone\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]},\"_p_createdAt\":{\"ret_value\":\"date\",\"caption\":\"createdAt\",\"sample_value\":\"2023-02-21T14:59:19.462330Z\",\"path\":[\"createdAt\"]},\"_p_updatedAt\":{\"ret_value\":\"date\",\"caption\":\"updatedAt\",\"sample_value\":\"2023-02-21T14:59:19.462330Z\",\"path\":[\"updatedAt\"]}}}}",
+            "url": "https://api.mentium.io/marketplaces/sellers"
+        },
+        "ABv": {
+            "body": "{\n\t\"firstName\": \"<first_name>\",\n\t\"lastName\": \"<last_name>\",\n    \"email\": \"<email>\",\n    \"correlationId\": \"<correlation_id>\"\n}",
+            "body_params": {
+                "ABx": {
+                    "key": "first_name",
+                    "private": true,
+                    "value": "John"
+                },
+                "ABy": {
+                    "key": "last_name",
+                    "private": true,
+                    "value": "Doe"
+                },
+                "ABz": {
+                    "key": "email",
+                    "private": true,
+                    "value": "jdoe-customer@mentium.io"
+                },
+                "ACA": {
+                    "key": "correlation_id",
+                    "private": true,
+                    "value": "123456789"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Customer",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.ABv",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABv\":{\"caption\":\"DEV - Create Customer\",\"fields\":{\"_p_customer.id\":{\"ret_value\":\"text\",\"caption\":\"customer id\",\"sample_value\":\"e3fba56b-8604-4d7b-b0fd-49466841930b\",\"path\":[\"customer\",\"id\"]},\"_p_customer.correlationId\":{\"ret_value\":\"text\",\"caption\":\"customer correlationId\",\"sample_value\":\"123456789\",\"path\":[\"customer\",\"correlationId\"]},\"_p_customer.email\":{\"ret_value\":\"text\",\"caption\":\"customer email\",\"sample_value\":\"jdoe-customer@mentium.io\",\"path\":[\"customer\",\"email\"]},\"_p_customer.firstName\":{\"ret_value\":\"text\",\"caption\":\"customer firstName\",\"sample_value\":\"John\",\"path\":[\"customer\",\"firstName\"]},\"_p_customer.lastName\":{\"ret_value\":\"text\",\"caption\":\"customer lastName\",\"sample_value\":\"Doe\",\"path\":[\"customer\",\"lastName\"]},\"_p_customer.phone\":{\"ret_value\":\"text\",\"caption\":\"customer phone\",\"sample_value\":\"\",\"path\":[\"customer\",\"phone\"]},\"_p_customer.createdAt\":{\"ret_value\":\"date\",\"caption\":\"customer createdAt\",\"sample_value\":\"2023-02-21T13:50:33.939603112Z\",\"path\":[\"customer\",\"createdAt\"]},\"_p_customer.updatedAt\":{\"ret_value\":\"date\",\"caption\":\"customer updatedAt\",\"sample_value\":\"2023-02-21T13:50:33.939603317Z\",\"path\":[\"customer\",\"updatedAt\"]}}}}",
+            "url": "https://api.mentium.io/customers"
+        },
+        "ACC": {
+            "initialized": true,
+            "method": "get",
+            "name": "List Customers",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.ACC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACC\":{\"caption\":\"DEV - List Customer\",\"fields\":{\"_p_customers\":{\"ret_value\":\"list.api.1677486973364x244644795467431940.plugin_api.ACC.customers\",\"caption\":\"customers\",\"path\":[\"customers\"]}}},\"plugin_api.ACC.customers\":{\"caption\":\"DEV - List Customer customer\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"e3fba56b-8604-4d7b-b0fd-49466841930b\",\"path\":[\"id\"]},\"_p_correlationId\":{\"ret_value\":\"text\",\"caption\":\"correlationId\",\"sample_value\":\"123456789\",\"path\":[\"correlationId\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"jdoe-customer@mentium.io\",\"path\":[\"email\"]},\"_p_firstName\":{\"ret_value\":\"text\",\"caption\":\"firstName\",\"sample_value\":\"John\",\"path\":[\"firstName\"]},\"_p_lastName\":{\"ret_value\":\"text\",\"caption\":\"lastName\",\"sample_value\":\"Doe\",\"path\":[\"lastName\"]},\"_p_phone\":{\"ret_value\":\"text\",\"caption\":\"phone\",\"sample_value\":\"\",\"path\":[\"phone\"]},\"_p_createdAt\":{\"ret_value\":\"date\",\"caption\":\"createdAt\",\"sample_value\":\"2023-02-21T13:50:33.939603Z\",\"path\":[\"createdAt\"]},\"_p_updatedAt\":{\"ret_value\":\"date\",\"caption\":\"updatedAt\",\"sample_value\":\"2023-02-21T13:50:33.939603Z\",\"path\":[\"updatedAt\"]}}}}",
+            "url": "https://api.mentium.io/customers"
+        },
+        "ACa": {
+            "body": "{\n  \"amount\": <amount>,\n  \"orderId\": \"<order_id>\",\n  \"payer\": {\n    \"email\": \"<payer_email>\",\n    \"firstName\": \"<payer_firstname>\",\n    \"lastName\": \"<payer_lastname>\"\n  },\n  \"marketplace\": { \"fee\": <marketplace_fee>, \"sellerId\": \"<seller_id>\" }\n}",
+            "body_params": {
+                "ACc": {
+                    "key": "amount",
+                    "private": true,
+                    "value": "50"
+                },
+                "ACd": {
+                    "key": "order_id",
+                    "private": true,
+                    "value": "ORDER-12345"
+                },
+                "ACe": {
+                    "key": "payer_email",
+                    "private": true,
+                    "value": "jdoe-customer@mentium.io"
+                },
+                "ACf": {
+                    "key": "payer_firstname",
+                    "private": true,
+                    "value": "John"
+                },
+                "ACg": {
+                    "key": "payer_lastname",
+                    "private": true,
+                    "value": "Doe"
+                },
+                "ACj": {
+                    "key": "seller_id",
+                    "private": true,
+                    "value": "c46ace66-8963-468e-aff6-878bcacdb53d"
+                },
+                "ADJ": {
+                    "key": "marketplace_fee",
+                    "private": true,
+                    "value": "5"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create Marketplace Checkout Session",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1677486973364x244644795467431940.plugin_api.ACa",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACa\":{\"caption\":\"DEV - Create Marketplace Checkout Session\",\"fields\":{\"_p_sessionLink\":{\"ret_value\":\"text\",\"caption\":\"sessionLink\",\"sample_value\":\"f82a088b-d155-4c64-a514-2eaa3713328e\",\"path\":[\"sessionLink\"]}}}}",
+            "url": "https://api.mentium.io/checkouts/new"
+        }
+    },
+    "human": "Mentium Pay",
+    "token_param_name": "X-API-Key"
+}

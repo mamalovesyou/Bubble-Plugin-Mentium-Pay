@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "0": "payment",
+        "1": "small business",
+        "2": "ecommerce",
+        "3": "analytics",
+        "4": "technical"
+    },
+    "demo_page": "https://mentium-plugin.bubbleapps.io/version-test?debug_mode=true",
+    "description": "Direct bank payments at almost no cost to attract the next billion users. Seriously, the cheapest transaction fees ever.\n- charge payments, \n- create and pay sellers plus more with every release,\n- automated KYC\n- best payment plugin for any platforms and marketplaces.\n\nPlease read the documentation about API:\nhttps://mentium.gitbook.io/documentation/\n\nEditor:\nhttps://bubble.io/page?name=index&id=mentium-plugin&tab=tabs-1\n\nDemo page:\nhttps://mentium-plugin.bubbleapps.io/version-test\n",
+    "image": "//s3.amazonaws.com/appforest_uf/f1676070071115x316376399132831400/logo2%20512.png",
+    "license": "open_source",
+    "link": "https://bubble.io/page?name=index&id=mentium-plugin&tab=tabs-1",
+    "name": "Mentium Pay",
+    "plugin_instructions": "Setup\n- Create account in mentium.io\n- Get your API keys and place them in plugin\n- Insert the Mentium element in your page\n- Use “Create Marketplace Seller” action to add seller to your marketplace.\n- Use “Create Checkout Session” action open checkout popup.\n\nBugs\nSubmit a bug report at mentium.io/\n\nResources\nPlease read the documentation about API:\nhttps://mentium.gitbook.io/documentation/\n\nEditor:\nhttps://bubble.io/page?name=index&id=mentium-plugin&tab=tabs-1\n\nDemo page:\nhttps://mentium-plugin.bubbleapps.io/version-test\n",
+    "sa_node_version": 14
+}

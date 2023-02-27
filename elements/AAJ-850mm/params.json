@@ -1,0 +1,83 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 50,
+        "width": 50
+    },
+    "display": "Mentium",
+    "events": {
+        "AAM": {
+            "caption": "onSuccess",
+            "name": "onSuccess"
+        },
+        "AAN": {
+            "caption": "onError",
+            "name": "onError"
+        },
+        "AAO": {
+            "caption": "onExit",
+            "name": "onExit"
+        }
+    },
+    "icon": "ion-cash",
+    "property_applications": {
+        "Background": false,
+        "Border": false,
+        "BoxShadow": false,
+        "Font": false,
+        "MinWidth": false,
+        "Padding": false,
+        "resizable": true
+    },
+    "states": {
+        "ACo": {
+            "caption": "payment ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "payment_id",
+            "value": "text"
+        },
+        "ACq": {
+            "caption": "status",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "status",
+            "value": "text"
+        },
+        "ACr": {
+            "caption": "Gross Amount",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "gross_amount",
+            "value": "number"
+        },
+        "ACs": {
+            "caption": "Net Amount",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "net_amount",
+            "value": "number"
+        },
+        "ACt": {
+            "caption": "Created At",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "created_at",
+            "value": "date"
+        },
+        "ACw": {
+            "caption": "Error Type",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error_type",
+            "value": "text"
+        }
+    }
+}

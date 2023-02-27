@@ -1,0 +1,12 @@
+{
+    "caption": "Open Checkout Session",
+    "fields": {
+        "AAm": {
+            "caption": "session",
+            "editor": "DynamicValue",
+            "name": "session",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}
